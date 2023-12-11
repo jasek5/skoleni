@@ -7,6 +7,6 @@ metadata:
 spec:
   containers:
   - name: my-container
-    image: sandbox
+    image: docker.io/sandbox
     command: ["tail"]
     args: ["-f", "/dev/null"]
