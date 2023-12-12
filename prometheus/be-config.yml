@@ -9,7 +9,7 @@ modules:
       fail_if_ssl: false
       fail_if_not_ssl: false
       headers:
-        Host: ['seznam.cz','kubernetes.io','datascript.io']
+        Host: ["seznam.cz", "kubernetes.io", "datascript.io"]
   http_2xx:
     prober: http
   http_post_2xx:
