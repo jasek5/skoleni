@@ -1,4 +1,19 @@
 modules:
+  http_2xx_and_301:
+    prober: http
+    timeout: 5s
+    http:
+      valid_http_versions: ["HTTP/1.1", "HTTP/2.0"]
+      valid_status_codes: []  # If empty, all codes are valid
+      method: GET
+      fail_if_ssl: false
+      fail_if_not_ssl: false
+      fail_if_matches_regexp: []
+      fail_if_not_matches_regexp: []
+      fail_if_matches_outside_regexp: []
+      fail_if_not_matches_outside_regexp: []
+      headers:
+        Host: ['seznam.cz','kubernetes.io','datascript.io']
   http_2xx:
     prober: http
   http_post_2xx:
