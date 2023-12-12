@@ -8,10 +8,6 @@ modules:
       method: GET
       fail_if_ssl: false
       fail_if_not_ssl: false
-      fail_if_matches_regexp: []
-      fail_if_not_matches_regexp: []
-      fail_if_matches_outside_regexp: []
-      fail_if_not_matches_outside_regexp: []
       headers:
         Host: ['seznam.cz','kubernetes.io','datascript.io']
   http_2xx:
