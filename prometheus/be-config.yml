@@ -4,7 +4,7 @@ modules:
     timeout: 5s
     http:
       valid_http_versions: ["HTTP/1.1", "HTTP/2.0"]
-      valid_status_codes: []  # If empty, all codes are valid
+      valid_status_codes: []
       method: GET
       fail_if_ssl: false
       fail_if_not_ssl: false
@@ -19,10 +19,10 @@ modules:
   http_2xx_webcam:
     prober: http
     http:
-      valid_status_codes: [200,301]
+      valid_status_codes: [200, 301]
       method: GET
       basic_auth:
         username: openwrt
-        password: cinta
+        password: abcd123
   icmp:
     prober: icmp
